@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+/*CSS variables*/
+
+:root {
+  --black: #202020;
+  --gold: #a67e17;
+  --silver: #bdc3c7;
+}
+
+/*fonts
+font-family: 'Gorditas', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Rubik', sans-serif;
+font-family: 'Sail', cursive;
+font-family: 'Zilla Slab Highlight', cursive;
+*/
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: var(--black);
+  cursor: url("../Images/cursor.png"), auto !important;
+}
+
+/*Navbar section*/
+
+.navbar1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 3;
+  position: fixed;
+  text-shadow: 0 0 1px var(--black);
+}
+
+.navbar1 ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar1 ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px;
+}
+
+.navbar1 ul li a {
+  color: var(--gold);
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  line-height: 0.5;
+  transition: 0.4s;
+}
+
+.navbar1 ul li a:hover {
+  background-color: var(--gold);
+  color: var(--silver);
+  padding-right: 10px;
+  border-radius: 3px;
+}
+
+/*This navbar just for decoration purposes*/
+
+.navbar2 {
+  width: 100%;
+  height: 5%;
+  background: var(--silver);
+  position: absolute;
+}
+
+/*Slider section*/
+
+.container {
+  position: absolute;
+  width: 200%;
+  height: 200vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 4em 0;
+}
+
+.block {
+  width: 400px;
+  background: grey;
+  margin: 1em;
+  filter: grayscale(0);
+  opacity: 1;
+  transition: 1s;
+  /*In order to make the golden blocks*/
+  box-shadow: 0px 0px 0px 0px var(--silver), 100px 100px 0 0 var(--gold);
+}
+
+.block:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  box-shadow: -10px 10px 10px 0px var(--gold), 100px 100px 0 0 var(--gold);
+}
+
+/*Images*/
+
+.block-1 {
+  background: url("../Images/one.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-2 {
+  background: url("../Images/two.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-3 {
+  background: url("../Images/three.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-4 {
+  background: url("../Images/four.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-5 {
+  background: url("../Images/five.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-6 {
+  background: url("../Images/six.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-7 {
+  background: url("../Images/seven.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block-8 {
+  background: url("../Images/eight.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/*Using Media Queries in order to create responsive website
+Mobiles*/
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .block {
+    height: 150px;
+  }
+}
+
+/*Tablets*/
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .block {
+    height: 300px;
+  }
+}
+
+/*Small laptops*/
+
+@media screen and (max-width: 1224px) and (min-width: 769px) {
+  .block {
+    height: 500px;
+  }
+}
+
+/*Larger*/
+
+@media only screen and (min-width: 1225px) {
+  .block {
+    height: 550px;
+  }
+}
+
+/*End slider*/

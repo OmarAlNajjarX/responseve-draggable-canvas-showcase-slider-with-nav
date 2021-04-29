@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css" />
-        <!--Java script Library for the slider-->
-        <script src="https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-    <body>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gorditas&family=Libre+Barcode+128+Text&family=Major+Mono+Display&family=Rubik:wght@300&family=Sail&family=Zilla+Slab+Highlight&display=swap"
+        rel="stylesheet" />
+    <!--CSS files-->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!--Java script Library for the slider-->
+    <script src="https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js"></script>
+</head>
+
+<body>
     <!--Start header-->
     <header>
-        <div class="navbar">
-
-            <!--Start navbar-->
-            <nav class="navbar1">
-                    <ul>
+        <div class="slider">
+            <div class="navbar">
+                <!--Start navbar-->
+                <nav class="navbar1">
+                    <ul id="changeFilter">
                         <li><a href="">home</a></li>
                         <li><a href="">posts</a></li>
                         <li><a href="">login/regester</a></li>
                     </ul>
-            </nav>
-             <!--End navbar-->
+                </nav>
+                <!--End navbar-->
 
-            <!--This navbar just for decoration purposes-->
-            <div class="navbar2"></div>
-            
-        </div>
-        
-        <!--Start container-->
-        <div class="container">
-            <div class="row">
-                <div class="block block-1"></div>
-                <div class="block block-2"></div>
-                <div class="block block-3"></div>
-                <div class="block block-4"></div>
-                <div class="block block-5"></div>
-                <div class="block block-6"></div>
+                <!--This navbar just for decoration purposes-->
+                <div class="navbar2"></div>
             </div>
-            <div class="row">
-                <div class="block block-5"></div>
-                <div class="block block-6"></div>
-                <div class="block block-7"></div>
-                <div class="block block-8"></div>
-                <div class="block block-1"></div>
-                <div class="block block-2"></div>
-            </div>
-            <div class="row">
-                <div class="block block-1"></div>
-                <div class="block block-2"></div>
-                <div class="block block-3"></div>
-                <div class="block block-4"></div>
-                <div class="block block-5"></div>
-                <div class="block block-6"></div>
-            </div>
-            <div class="row">
-                <div class="block block-5"></div>
-                <div class="block block-6"></div>
-                <div class="block block-7"></div>
-                <div class="block block-8"></div>
-                <div class="block block-1"></div>
-                <div class="block block-2"></div>
-            </div>
-        </div>
-        <!--End container-->
 
+            <!--Start container-->
+            <div class="container">
+                <div class="row">
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                    <div class="block block-3"></div>
+                    <div class="block block-4"></div>
+                    <div class="block block-5"></div>
+                    <div class="block block-6"></div>
+                </div>
+                <div class="row">
+                    <div class="block block-5"></div>
+                    <div class="block block-6"></div>
+                    <div class="block block-7"></div>
+                    <div class="block block-8"></div>
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                </div>
+                <div class="row">
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                    <div class="block block-3"></div>
+                    <div class="block block-4"></div>
+                    <div class="block block-5"></div>
+                    <div class="block block-6"></div>
+                </div>
+                <div class="row">
+                    <div class="block block-5"></div>
+                    <div class="block block-6"></div>
+                    <div class="block block-7"></div>
+                    <div class="block block-8"></div>
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                </div>
+            </div>
+            <!--End container-->
+        </div>
+        <!--End slider-->
     </header>
-    <!--Emd header-->
+    <!--End header-->
+    <script src="javaScript/jquery-3.6.0.min.js"></script>
+    <script src="javaScript/script.js"></script>
+</body>
 
-
-        <!--Script to make the slider work-->
-        <script>
-            
-            var element = document.querySelector(".container");
-            panzoom(element, {
-                minZoom: 1,
-                maxZoom: 1
-            });
-
-        </script>
-
-    </body>
 </html>
